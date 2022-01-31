@@ -6,12 +6,12 @@ import { getFirestore, collection } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB4qjjWepX-4SN8a2NH4TY-EhOZcr3K2Ac",
-  authDomain: "agenda-barber.firebaseapp.com",
-  projectId: "agenda-barber",
-  storageBucket: "agenda-barber.appspot.com",
-  messagingSenderId: "902105140343",
-  appId: "1:902105140343:web:67cf8e13fad8b547c24a72",
+  apiKey: process.env.NEXT_APIKEY,
+  authDomain: process.env.NEXT_AUTHDOMAIN,
+  projectId: process.env.NEXT_PROJECTID,
+  storageBucket: process.env.NEXT_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_APP_ID,
 };
 
 // Initialize Firebase
