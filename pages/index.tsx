@@ -21,6 +21,7 @@ import {
 
 import { Table } from "../components/tableAgendamentos";
 import ModalHorarioAtendimentos from "../components/modalHorarioAtendimentos";
+import withPrivateRoute from "../private/withPrivateRoute";
 
 const Home: NextPage = () => {
   const newDate = new Date().toISOString().split("T")[0];
@@ -318,4 +319,4 @@ const headerTable = [
   },
 ];
 
-export default Home;
+export default withPrivateRoute(Home);
